@@ -1,5 +1,5 @@
 module.exports = (Discord, client, message) =>{
-    const prefix = '#';//change the prefix to your convinience 
+    const prefix = '#';//change the prefix for your convinience 
     if (!message.content.startsWith(prefix) || message.author.bot) return;
 
     const args = message.content.slice(prefix.length).split(/ +/);
